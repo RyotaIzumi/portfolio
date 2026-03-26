@@ -30,6 +30,18 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+      .profile-header {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+
+      .icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%; /* 丸くする */
+          object-fit: cover;
+      }
     img {
       width: 100%;
       border-radius: 8px;
@@ -41,32 +53,151 @@
 </head>
 <body>
 
-<header>
-  <h1>Ryotaのポートフォリオ(仮)</h1>
-  <p>制作物まとめ</p>
-</header>
+    <header>
+        <h1>Ryotaのポートフォリオ(仮)</h1>
+        <p>急いで作ったものなので雑です。ご了承くださいm(__)m</p>
+    </header>
 
-<div class="container">
-  <h2>作品</h2>
+    <div class="container">
+        <h2>自己紹介</h2>
 
-  <div class="works">
-    
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>作品タイトル1</h3>
-      <p>簡単な説明</p>
-      <a href="#">リンク</a>
+        <div class="card">
+            <div class="profile-header">
+                <img src="images/icon.png" class="icon">
+                <h3>Ryota</h3>
+            </div>
+
+            <p>
+                <strong>役職 :</strong> プログラマー
+            </p>
+
+            <p>
+                <strong>使用技術 :</strong> Siv3D(C++), Unity, GameMaker
+            </p>
+
+            <p>
+                今までのゲームすべてプログラマーとして制作に携わりました。
+                弾幕やボスの実装が大好きです。
+            </p>
+        </div>
     </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>作品タイトル2</h3>
-      <p>簡単な説明</p>
-      <a href="#">リンク</a>
+    <div class="container">
+        <h2>会津大学 企画開発部での作品</h2>
+
+        <div class="works">
+
+            <div class="card">
+                <img src="images/title1.jpg">
+                <h3>帰奇廻怪</h3>
+                <p>アノマリーの蔓延る世界で研究所の謎を追うローグライクゲームです</p>
+                <p>制作 : 2023/8 ～ 2023/12</p>
+            </div>
+
+            <div class="card">
+                <img src="images/title2.png">
+                <h3>All for Credit</h3>
+                <p>音楽に合わせて障害物などを避け、登校を目指すリズムゲームです</p>
+                <p>制作 : 2024/3 ～ 2024/4</p>
+            </div>
+
+            <div class="card">
+                <img src="images/title3.png">
+                <h3>Haunted University</h3>
+                <p>呪われた大学からの脱出を目指すアクションゲームです</p>
+                <p>制作 : 2024/8 ～ 2024/12</p>
+            </div>
+
+            <div class="card">
+                <img src="images/title4.png">
+                <h3>return false;</h3>
+                <p>とある大学のゲーム開発現場で起きた事件を解き明かす推理ゲームです</p>
+                <p>制作 : 2025/3 ～ 2025/8</p>
+            </div>
+
+            <div class="card">
+                <img src="images/title5.png">
+                <h3>深き底に沈みゆく君を追い求めて</h3>
+                <p>行方不明となった姉を捜すため、海で冒険を繰り広げるアクションゲームです</p>
+                <p>制作 : 2025/8 ～ 2025/12</p>
+            </div>
+
+        </div>
+
     </div>
 
-  </div>
-</div>
+    <div class="container">
+        <h2>その他チーム制作作品</h2>
+
+        <div class="works">
+
+            <div class="card">
+                <img src="images/team_title1.png">
+                <h3>???</h3>
+                <p>過去の企画開発部別チームの作品をリメイクした落ちものパズルゲームです。</p>
+                <p>制作 : 2026/1 ～ 2026/3</p>
+            </div>
+
+            <div class="card">
+                <img src="">
+                <h3>???</h3>
+                <p>GameMakerで制作している2DのRPGです</p>
+                <p>制作 : 2024/9 ～ </p>
+            </div>
+
+            <div class="card">
+                <img src="">
+                <h3>???</h3>
+                <p>Unityで制作している2DのRPGです</p>
+                <p>制作 : 2025/6 ～ </p>
+            </div>
+
+            <div class="card">
+                <img src="">
+                <h3>???</h3>
+                <p>???</p>
+                <p>制作 : 2026/1 ～ </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>個人制作作品</h2>
+
+        <div class="works">
+
+            <div class="card">
+                <img src="">
+                <h3>I wanna defeat boss cherries!(仮)</h3>
+                <p>アイワナのりんごであるゲームのボスを再現した、自身の最初の作品です。いつかまとめて直したものを公開しようと思います</p>
+                <p>制作 : 2019 ～ 2021</p>
+            </div>
+
+            <div class="card">
+                <img src="">
+                <h3>I wanna ???</h3>
+                <p>耐久ボス一本の作品です。最近別の制作環境(次を参照)を整えたので、こちらで引き続き制作を続けています。</p>
+                <p>制作 : 2026/1 ～ (2021 ～)</p>
+            </div>
+
+            <div class="card">
+                <img src="">
+                <h3>I wanna Siv3D</h3>
+                <p>
+                    C++でアイワナの耐久作品を作りたかったのでやってみました。といっても機能はまだまだ不十分なのでどんどん追加していきたいです。<br>
+                    最近別の開発の影響で、ボスや道中要素、これらを作るためのステージエディタなども含まれることになりそうです。
+                </p>
+                <p>制作 : 2026/1 ～ </p>
+                <a href="https://qiita.com/Ryota123/items/a63acdcdfc3987ca0acf" target="_blank">
+                    Qiita記事を見る
+                </a>
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
